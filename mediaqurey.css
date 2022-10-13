@@ -1,0 +1,117 @@
+@media screen and (max-width:1080px) {
+  body{
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  header{
+    justify-content: space-evenly;
+    padding: 1rem 5%;
+    width: 50%;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    width: 150px;
+  }
+
+  .nav{
+    position: fixed;
+    z-index: 10000;
+    top: 71px;
+    right: -100%;
+    flex-direction: column;
+    background-color: var(--light-secondary-color);
+    padding: 5rem 2rem;
+    width: 35%;
+    height: 420px;
+    text-align: center;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 5px 30px rgba(33, 40, 50, 0.34);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+  }
+
+  .nav-flex li{
+    opacity: 0;
+  }
+
+  .nav > a{
+    opacity: 0;
+  }
+  .nav-flex{
+    flex-direction: column;
+    margin-right: 0;
+}
+.nav-flex li.nav-item:not(:last-child){
+  margin-right: 0;
+  margin-bottom: 4.5rem;
+}
+.nav a.btn-border{
+  margin-top: 4.5rem;
+}
+
+
+/* .nav a.btn-border {
+  color: rgb(236, 236, 236);
+  border: 1px solid rgb(236, 236, 236);
+} */
+
+  .open-menu {
+    display: block;
+    color: var( --small-color);
+    font-size: 2.8rem !important;
+  }
+  
+  .close-menu {
+    color: var(--secondary-color);
+  }
+
+  .open-menu.notShowMenu {
+    display: none;
+    }
+    
+    .close-menu.notShowMenu {
+    display: block;
+    }
+  .nav.show {
+    right: 0;
+  }
+}
+
+@keyframes slideX {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  
+  }
+  
+  @media screen and (max-width: 850px) {
+    .show-text h2{
+     width: 100%;
+    }
+ }
+ @media screen and (max-width:1050px){
+  html{
+      font-size: 50%; /* 1rem = 8px*/
+  }
+}
