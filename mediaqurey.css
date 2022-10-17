@@ -1,9 +1,4 @@
-@media screen and (max-width:1080px) {
-  body{
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-  }
+/* @media screen and (max-width:1080px) {
   header{
     justify-content: space-evenly;
     padding: 1rem 5%;
@@ -63,7 +58,7 @@
   border: 1px solid rgb(236, 236, 236);
 } */
 
-  .open-menu {
+  /* .open-menu {
     display: block;
     color: var( --small-color);
     font-size: 2.8rem !important;
@@ -83,7 +78,7 @@
   .nav.show {
     right: 0;
   }
-}
+} */
 
 @keyframes slideX {
   from {
@@ -105,7 +100,7 @@
   
   }
   
-  @media screen and (max-width: 850px) {
+  /* @media screen and (max-width: 850px) {
     .show-text h2{
      width: 100%;
     }
@@ -113,5 +108,162 @@
  @media screen and (max-width:1050px){
   html{
       font-size: 50%; /* 1rem = 8px*/
+  /* } */
+/* } */
+
+@media (max-width:1004px) {
+html{
+  font-size: 50%;
+}  
+}
+@media (max-width:740px){
+  .nav{
+    position: fixed;
+    z-index: 10000;
+    top: 71px;
+    right: -100%;
+    flex-direction: column;
+    background-color: var(--light-secondary-color);
+    padding: 5rem 2rem;
+    width: 35%;
+    height: 420px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 5px 30px rgba(33, 40, 50, 0.34);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
   }
+
+  .nav-flex li{
+    opacity: 0;
+  }
+
+  .nav > a{
+    opacity: 0;
+  }
+  .nav-flex{
+    flex-direction: column;
+    margin-right: 0;
+}
+.nav-flex li.nav-item:not(:last-child){
+  margin-right: 0;
+  margin-bottom: 4.5rem;
+}
+.nav a.btn-border{
+  margin-top: 4.5rem;
+}
+
+
+.nav a.btn-border {
+ margin-bottom: 2rem;
+}
+
+  .open-menu {
+    display: block;
+    color: var( --small-color);
+    font-size: 2.8rem !important;
+  }
+  .close-menu {
+    color: var(--secondary-color);
+  }
+
+  .open-menu.notShowMenu {
+    display: none;
+    }
+    
+    .close-menu.notShowMenu {
+    display: block;
+    }
+  .nav.show {
+    right: 0;
+  }
+}
+@media(max-width:650px){
+  .nav{
+    width: 50%;
+  }
+  
+
+}
+@media (max-width:550px){
+  .show-flex{
+    grid-template-columns: 100%;
+  }
+  .about-img > img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-flex{
+    grid-template-columns: 100%;
+  }
+  .contagion-flex{
+    grid-template-columns: 100%;
+  }
+  .symptomps-img > img{
+    width: 100%;
+  }
+  .what-we-do-flex{
+    grid-template-columns: 100%;
+  }
+  .map-flex{
+    grid-template-columns: 100%;
+  }
+
+  .quest-post >h2{
+    width: 100%;
+  }
+.quest-input{
+  width: 100%;
+}
+.quest-input > input{
+  width: 100%;
+}
+.btn-quest{
+  margin-left: 14.5rem;
+}
+
+}
+@media(max-width:837px){
+  .footer-flex{
+    display: block;
+  
+  }
+  .nav2{
+    display: block;
+  }
+  .nav-flex2{
+    display: block;
+    line-height: 2.5rem;
+    padding: 2rem;
+  }
+  .icons > i:not(:last-child){
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width:400px) {
+ .nav{
+  width: 80%;
+ } 
+
+}
+@media screen and (max-width: 460px) {
+  .quest-post >h2{
+    width: 100%;
+  }
+.quest-input{
+  width: 100%;
+}
+.quest-input > input{
+  width: 100%;
+}
+.btn-quest{
+  margin-left: 14.5rem;
+}
 }

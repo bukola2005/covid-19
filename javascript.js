@@ -16,7 +16,7 @@ function toggleMenu() {
 
   allNavLinks.forEach((el, index) => {
     if (!el.style.animation) {
-      el.style.animation = `slideX 0.5s ease forwards ${index / 5 + 1}s `;
+      el.style.animation = `slideX 0.5s ease forwards ${index / 20 + 1}s `;
     } else {
       el.style.animation = "";
     }
@@ -79,18 +79,18 @@ window.addEventListener("load", () => {
 });
 
 // Smooth Scrolling
-$('.nav a, .btn').on('click', function(event) {
-  if (this.hash !== '') {
-    event.preventDefault();
+// $('.nav a, a.btn').on('click', function(event) {
+//   if (this.hash !== '') {
+//     event.preventDefault();
 
-    const hash = this.hash;
+//     const hash = this.hash;
 
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 100
-      },
-      900
-    );
-  }
-});
+//     $('html, body').animate(
+//       {
+//         scrollTop: $(hash).offset().top - 100
+//       },
+//       500
+//     );
+//   }
+// });
 
