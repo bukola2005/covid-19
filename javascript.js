@@ -79,18 +79,18 @@ window.addEventListener("load", () => {
 });
 
 // Smooth Scrolling
-// $('.nav a, a.btn').on('click', function(event) {
-//   if (this.hash !== '') {
-//     event.preventDefault();
+$('.nav a, a.btn').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
 
-//     const hash = this.hash;
+    const hash = this.hash;
 
-//     $('html, body').animate(
-//       {
-//         scrollTop: $(hash).offset().top - 100
-//       },
-//       500
-//     );
-//   }
-// });
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 100
+      },
+      500
+    );
+  }
+});
 
