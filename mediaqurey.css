@@ -190,7 +190,33 @@ html{
     width: 50%;
   }
   
+  .quest-post >h2{
+    width: 100%;
+  }
+.quest-input{
+  width: 100%;
+}
+.quest-input > input{
+  width: 100%;
+}
+.btn-quest{
+  margin-left: 14.5rem;
+}
 
+}
+@media (max-width:654px){
+  .quest-post >h2{
+    width: 100%;
+  }
+.quest-input{
+  width: 100%;
+}
+.quest-input > input{
+  width: 100%;
+}
+.btn-quest{
+  margin-left: 14.5rem;
+}
 }
 @media (max-width:550px){
   .show-flex{
@@ -229,6 +255,30 @@ html{
   margin-left: 14.5rem;
 }
 
+.footer-flex{
+  display: block;
+
+}
+.nav2{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.nav-flex2{
+  display: flex;
+  line-height: 2.5rem;
+  padding: 2rem;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+
 }
 @media(max-width:837px){
   .footer-flex{
@@ -237,21 +287,51 @@ html{
   }
   .nav2{
     display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
   }
   .nav-flex2{
-    display: block;
+    display: flex;
     line-height: 2.5rem;
     padding: 2rem;
   }
-  .icons > i:not(:last-child){
-    margin-bottom: 2rem;
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
   }
 }
 @media (max-width:400px) {
  .nav{
   width: 80%;
  } 
+ .footer-flex{
+  display: block;
 
+}
+.nav2{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.nav-flex2{
+  display: flex;
+  line-height: 2.5rem;
+  padding: 2rem;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 60%;
+}
 }
 @media screen and (max-width: 460px) {
   .quest-post >h2{
@@ -265,5 +345,28 @@ html{
 }
 .btn-quest{
   margin-left: 14.5rem;
+}
+.footer-flex{
+  display: block;
+
+}
+.nav2{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+.nav-flex2{
+  display: flex;
+  line-height: 2.5rem;
+  padding: 2rem;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
 }
 }
