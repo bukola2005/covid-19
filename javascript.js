@@ -73,7 +73,7 @@ toggleModeBtns.forEach(el => {
 window.addEventListener("load", () => {
   headerTag.classList.toggle("sticky", window.scrollY > 0);
   if(darkMode){
-    enableDarkMode()
+    enableDarkMode();
   }
 
 });
