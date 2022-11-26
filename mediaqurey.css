@@ -111,11 +111,11 @@
   /* } */
 /* } */
 
-@media (max-width:1004px) {
-html{
-  font-size: 50%;
-}  
-}
+  @media (max-width:1004px) {
+  html{
+    font-size: 50%;
+  }  
+  }
 @media (max-width:740px){
   .nav{
     position: fixed;

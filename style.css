@@ -17,16 +17,16 @@
   --box-shadow: 1rem 2rem 2rem 2rem rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
   :root{
     --foreground:var(--ligth-color);
     --background:var(--dark-color);
     --small-color:#fff;
-    --box-shadow: 0 30px 50px rgba(230, 217, 217, 0.15);
+    --box-shadow: 0 30px 50px rgba(230, 217, 217, 0.15); */
     /* --primary-color: #fff; */
-  }
-}
+  /* }
+} */
 
 .darkMode{
   --foreground:var(--ligth-color);
